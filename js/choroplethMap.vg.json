@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Countries' income group (2019)",
-  "width": 800,
+  "width":  1200,
   "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/zx-0001/FIT3179_Assignment2/main/js/ne_110m.json",
@@ -19,6 +19,13 @@
           "field": "note"
         }
       }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/zx-0001/FIT3179_Assignment2/main/js/ne_110m.json",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     },
     {
       "transform": [
