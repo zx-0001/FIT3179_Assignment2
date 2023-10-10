@@ -7,3 +7,10 @@
 	font-family: arial;
 
 }
+
+#map_container {
+	padding-top: 8px;
+	width: 1200px;
+	margin-bottom: 10px;
+}
+

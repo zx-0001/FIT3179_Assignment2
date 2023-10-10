@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  <head>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
-</head>
-<body>
-  <h1 id="title">Socio-economic factors of different regions</h1>
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+  </head>
+  <body>
+    <h1 id="title">Socio-economic factors of different regions</h1>
 
-<div id="choropleth_map"></div>
+    <div id="map_container">
+      <p>
+        With advances in science and technology, we are currently living in the
+        most prosperous era in human history and this is especially true for
+        those living in high-income countries. However, it is worth looking back
+        and seeing exactly how much we have progressed as a whole on a global
+        scale, to see how much progress has been achieved in different regions
+        using data on socio-economic variables of countries around the world.
+      </p>
 
-<script type="text/javascript">
+      <div id="choropleth_map"></div>
+      <div id="scatter_plot"></div>
+      <div id="bar_chart"></div>
+    </div>
 
-  var spec2 = "js/choroplethMap.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+    <script type="text/javascript">
+      var spec2 = "js/choroplethMap.vg.json";
+      vegaEmbed("#choropleth_map", spec2)
+        .then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        })
+        .catch(console.error);
 
-  var spec3 = "js/bar_chart.vg.json";
-  vegaEmbed('#bar_chart', spec3).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+      var spec3 = "js/bar_chart.vg.json";
+      vegaEmbed("#bar_chart", spec3)
+        .then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        })
+        .catch(console.error);
 
-</body>
+      var spec4 = "js/scatterPlot.vg.json";
+      vegaEmbed("#scatter_plot", spec4)
+        .then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        })
+        .catch(console.error);
+    </script>
+  </body>
 </html>
