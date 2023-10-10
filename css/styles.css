@@ -1,16 +1,47 @@
 #choropleth_map {
 	vertical-align: top;
+	align-self: center;
 	width: 100%;
+	border-radius: 30px;
+	margin-bottom: 30px;
 }
 
+#scatter_plot {
+	vertical-align: top;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.center-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #EDEDE9;
+  }
 #title{
 	font-family: arial;
-
+	align-self: center;
 }
 
-#map_container {
+.container {
 	padding-top: 8px;
-	width: 1200px;
+	width: 800px;
 	margin-bottom: 10px;
+	border-radius: 30px;
+	background-color: #fbfefb;
 }
 
+.column_left {
+	float: left;
+    width: 40%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 0%;
+}
+.column_right {
+	float: right;
+	width: 40%;
+	padding-right: 5%;
+}

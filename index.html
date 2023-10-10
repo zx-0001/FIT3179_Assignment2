@@ -10,23 +10,55 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
   </head>
   <body>
-    <h1 id="title">Socio-economic factors of different regions</h1>
+    <div class="center-screen">
+      <h1 id="title">Socio-economic factors of different regions</h1>
 
-    <div id="map_container">
-      <p>
-        With advances in science and technology, we are currently living in the
-        most prosperous era in human history and this is especially true for
-        those living in high-income countries. However, it is worth looking back
-        and seeing exactly how much we have progressed as a whole on a global
-        scale, to see how much progress has been achieved in different regions
-        using data on socio-economic variables of countries around the world.
-      </p>
+      <div class="container">
+        <div class="column_left">
+          <p>
+            With advances in science and technology, we are currently living in
+            the most prosperous era in human history and this is especially true
+            for those living in high-income countries. However, it is worth
+            looking back and seeing exactly how much we have progressed as a
+            whole on a global scale, to see how much progress has been achieved
+            in different regions.
+          </p>
+        </div>
+        <div class="column_right">
+          <p>
+            The following visualisations used data from the World Bank of
+            different countries' socio-economic variables and life expectancy
+            from 2000-2019.
+          </p>
+        </div>
 
-      <div id="choropleth_map"></div>
-      <div id="scatter_plot"></div>
-      <div id="bar_chart"></div>
+        <div id="choropleth_map"></div>
+      </div>
+
+      <div class="container">
+        <div id="scatter_plot"></div>
+        <div class="column_left">
+          <p>
+            Intuitively speaking, more spending on health should increase life
+            expectancy but from the graph, there does not appear to be any
+            universal correlation between health expenditure (% GDP) and life
+            expectancy. The legend can be clicked to highlight the region of
+            interest.
+          </p>
+        </div>
+        <div class="column_right">
+          <p>
+            Interestingly, some countries like Singapore, have high life
+            expectancy despite having a lower % of health expenditure whereas a
+            country like Afghanistan has a comparatively low life expectancy.
+            This can either mean there are other more important unobserved
+            variables that affect life expectancy or % of health expenditure is
+            not a good variable to correlate with life expectancy.
+          </p>
+        </div>
+        <div id="bar_chart"></div>
+      </div>
     </div>
-
     <script type="text/javascript">
       var spec2 = "js/choroplethMap.vg.json";
       vegaEmbed("#choropleth_map", spec2)

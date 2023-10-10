@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
-  "height": 400,
+  "height": 300,
   "title": "Correlation between health expediture (% of GDP) and life expectancy",
   "data": {
     "url": "https://raw.githubusercontent.com/zx-0001/FIT3179_Assignment2/main/data/life%20expectancy.csv"
