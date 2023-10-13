@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/zx-0001/FIT3179_Assignment2/main/data/life%20expectancy.csv"
+  },
+  "transform": [
+    { "filter": "datum['Year'] == 2019" },
+    {
+      "fold": [
+        "High income",
+        "Upper middle income",
+        "Lower middle income",
+        "Low income"
+      ]
+    }
+  ],
+  "mark":"bar",
+  "encoding": {
+    "x": {
+      "field": "Region",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "field":"IncomeGroup",
+      "type": "quantitative",
+      "title": "Total Gross"
+    },
+    "color":{"field":"IncomeGroup", "type": "nominal"},
+    "tooltip": [
+      { "field": "Region", "type": "nominal" },
+      { "field": "Year", "type": "quantitative" },
+      {
+        "aggregate": "count",
+        "field": "IncomeGroup",
+        "type": "quantitative",
+        "format": ","
+      }
+    ]
+  },
+  "config": {
+    "mark": { "invalid": null }
+  }
+}
