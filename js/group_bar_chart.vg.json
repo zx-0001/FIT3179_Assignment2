@@ -1,44 +1,59 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": { "text": "Count of each region in diffenrent income groups" },
-  "background": {"expr": "lab(99, -2, 1)"},
+  "background": { "expr": "lab(99, -2, 1)" },
   "data": {
     "url": "https://raw.githubusercontent.com/zx-0001/FIT3179_Assignment2/main/data/life%20expectancy.csv"
   },
-  "transform": [
-    { "filter": "datum['Year'] == 2019" }
-
-  ],
+  "transform": [{ "filter": "datum['Year'] == 2019" }],
   "mark": "bar",
   "encoding": {
     "y": {
-      "aggregate": "count", "field": "Region", "type": "quantitative",
-      "axis": {"title": "Count", "grid": false}
+      "aggregate": "count",
+      "field": "Region",
+      "type": "quantitative",
+      "axis": { "title": "Count of countries", "grid": false }
     },
     "x": {
-      "field": "Region", "type": "nominal",
-      "axis": {"title": ""}
+      "field": "Region",
+      "type": "nominal",
+      "axis": { "title": "Region" }
     },
     "color": {
-      "field": "IncomeGroup", "type": "nominal"
+      "field": "IncomeGroup",
+      "type": "nominal",
+      "sort": [
+        "High income",
+        "Upper middle income",
+        "Lower middle income",
+        "Low income"
+      ],
+      "scale": { "range": ["#253494", "#2c7fb8", "#41b6c4", "#a1dab4"] }
     },
     "xOffset": {
-        "field": "IncomeGroup"
+      "field": "IncomeGroup",
+      "sort": [
+        "High income",
+        "Upper middle income",
+        "Lower middle income",
+        "Low income"
+      ]
     },
     "tooltip": [
-        { "field": "Region", "type": "nominal" },
-        { "field": "Year", "type": "quantitative" },
-        {
-          "aggregate": "count",
-          "field": "IncomeGroup",
-          "type": "quantitative",
-          "format": ","
-        }
-      ]
+      { "field": "Region", "type": "nominal" },
+      { "field": "Year", "type": "quantitative" },
+      {
+        "aggregate": "count",
+        "field": "IncomeGroup",
+        "type": "quantitative",
+        "format": ",",
+        "title": "Count"
+      }
+    ]
   },
-  
+
   "config": {
-    "view": {"stroke": "transparent"},
-    "axis": {"domainWidth": 1}
+    "view": { "stroke": "transparent" },
+    "axis": { "domainWidth": 1 }
   }
 }
