@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Countries' income group (2019)",
+  "title": "Map of countries' income group (2019)",
   "background": {"expr": "lab(99, -2, 1)"},
   "width":  750,
   "height": 400,

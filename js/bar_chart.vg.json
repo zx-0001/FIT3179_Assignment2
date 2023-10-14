@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": { "text": "Average unemployment % by income group (2019)" },
+  "width": 250,
+  "height": 100,
   "data": {
     "url": "https://raw.githubusercontent.com/zx-0001/FIT3179_Assignment2/main/data/life%20expectancy.csv"
   },

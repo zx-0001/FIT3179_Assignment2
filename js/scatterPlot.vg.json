@@ -70,6 +70,7 @@
         "align": "center",
         "baseline": "bottom",
         "dx": -5,
+        "dy": -5,
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
@@ -78,7 +79,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country Name'] == 'Afghanistan' || datum['Country Name'] == 'Singapore' || datum['Country Name'] == 'Chad' || datum['Country Name'] == 'United States'",
+            "test": "datum['Country Name'] == 'Afghanistan' || datum['Country Name'] == 'Singapore'",
             "value": 1
           },
           "value": 0

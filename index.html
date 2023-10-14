@@ -11,26 +11,27 @@
   </head>
   <body>
     <div class="center-screen">
-      
-      <h1 id="title">Socio-economic factors of different regions</h1>
+      <div class="container">
+        <h1 id="title">Socio-economic factors of different income countries</h1>
+      </div>
 
       <div class="container">
+        <h2 class="heading">Overview</h2>
         <div class="column_left">
           <p>
             With advances in science and technology, we are currently living in
             the most prosperous era in human history and this is especially true
-            for those living in high-income countries. However, it is worth
-            looking back and seeing exactly how much we have progressed as a
-            whole on a global scale, to see how much progress has been achieved
-            in different regions.
+            for those living in high-income countries. However, can the same be
+            said for low-income countries and how significant are the
+            differences between countries of different incomes?
           </p>
         </div>
         <div class="column_right">
           <p>
             The following visualisations used data from the World Bank of
-            different countries’ socio-economic variables and life expectancy
-            from 2000-2019 and will be showing the differences between countries
-            of different income groups.
+            different countries' socio-economic variables and life expectancy
+            from 2001-2019 and will show the differences between countries of
+            different income groups based on these variables.
           </p>
         </div>
 
@@ -64,6 +65,7 @@
       </div>
 
       <div class="container">
+        <h2 class="heading">Trends</h2>
         <div id="scatter_plot"></div>
         <div class="column_left">
           <p>
@@ -79,20 +81,60 @@
             Interestingly, some countries like Singapore, have high life
             expectancy despite having a lower % of health expenditure whereas a
             country like Afghanistan has a comparatively low life expectancy.
-            This can either mean there are other more important unobserved
-            variables that affect life expectancy or % of health expenditure is
-            not a good variable to correlate with life expectancy.
+            This can mean there are other more important variables that affect
+            life expectancy or % of health expenditure is not a good variable to
+            correlate with life expectancy.
           </p>
         </div>
       </div>
       <div class="container">
+        <h2 class="heading">Comparisons</h2>
         <div id="bar_chart"></div>
-      </div>
-      <div class="container">
+        <div class="column_right">
+          <p>
+            The bar chart compares the unemployment rates of the different
+            income distributions. We can see here that the highest unemployment
+            rate is in upper-middle-income countries while high-income countries
+            have the lowest unemployment rate. The low unemployment rate can be
+            due to high-income countries having more job opportunities.
+          </p>
+        </div>
+
         <div id="line_chart"></div>
-      </div>
-      <div class="container">
+        <div class="column_left">
+          <p>
+            The line graph compares the average prevalence of undernourishment
+            over time for the 4 income groups. Unsurprisingly, the lower the
+            income group, the higher the prevalence of undernourishment with a
+            big gap between low and middle-income countries. Low-income
+            countries would not have an abundance of food and services hence the
+            high undernourishment rate.
+          </p>
+        </div>
+
         <div id="range_dot_plot"></div>
+        <div class="column_right">
+          <p>
+            The dot plot shows the average life expectancy of the different
+            income groups in 2001 and 2019. While life expectancy has increased
+            over time, we can see that the higher the income group, the higher
+            the life expectancy and this can be due to low-income countries
+            lacking the resources and facilities to provide proper nutrition and
+            health care, resulting in higher mortality and lower life
+            expectancy.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <p style="font-size: small; padding-left: 3%">
+          Data source taken from
+          <a
+            href="https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank"
+            title="Link to data source"
+            >here</a
+          >
+        </p>
       </div>
     </div>
 

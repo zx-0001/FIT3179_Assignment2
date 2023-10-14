@@ -23,13 +23,14 @@
 	vertical-align: top;
 	width: 100%;
 	margin-top: 20px;
+	padding-bottom: 5px;
 }
 
 #bar_chart {
 	float: left;
-	padding-left: 7%;
+	padding-left: 3%;
 	padding-right: 10px;
-	padding-bottom: 5%;
+	padding-bottom: 7%;
 	width: 40%;
 }
 
@@ -37,14 +38,16 @@
 	float: right;
 	padding-right: 7%;
 	padding-bottom: 5%;
+	padding-top: 5%;
 	width: 45%;
 }
 
 #range_dot_plot {
 	float: left;
-	padding-left: 7%;
+	padding-left: 3%;
 	padding-right: 10px;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
+	padding-top: 15%;
 	width: 40%;
 }
 
@@ -59,6 +62,9 @@
 #title{
 	font-family: arial;
 	align-self: center;
+	text-align: center;
+	font-weight: bold;
+	color: #023047;
 }
 
 .container {
@@ -70,15 +76,23 @@
 	background-color: #fbfefb;
 }
 
+.heading {
+	font-family: Arial;
+	color: #03045e;
+	font-size: x-large;
+	padding-left: 5%;
+}
+
 .column_left {
 	float: left;
     width: 40%;
+	font-family: arial;
     padding-right: 5%;
     padding-left: 5%;
-    padding-top: 5px;
 }
 .column_right {
 	float: right;
+	font-family: arial;
 	width: 40%;
 	padding-right: 5%;
 }
