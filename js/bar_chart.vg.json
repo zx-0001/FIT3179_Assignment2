@@ -11,6 +11,16 @@
   "mark": "bar",
   "encoding": {
     "x": { "aggregate":"mean", "field": "Unemployment", "type": "quantitative" },
-    "y": { "field": "IncomeGroup", "type": "nominal", "sort":["High income","Upper middle income", "Lower middle income", "Low income" ] }
+    "y": { "field": "IncomeGroup", "type": "nominal", "sort":["High income","Upper middle income", "Lower middle income", "Low income" ] },
+    "tooltip": [
+      { "field": "IncomeGroup", "type": "nominal", "title": "Income Group" },
+      {
+        "aggregate": "mean",
+        "field": "Unemployment",
+        "type": "quantitative",
+        "format": ".2f",
+        "title": "Average unemployment"
+      }
+    ]
   }
 }

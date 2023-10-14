@@ -28,10 +28,11 @@
 }
 
 .container {
-	padding-top: 8px;
-	width: 900px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	margin-bottom: 10px;
 	border-radius: 30px;
+	width: 900px;
 	background-color: #fbfefb;
 }
 
@@ -40,7 +41,7 @@
     width: 40%;
     padding-right: 5%;
     padding-left: 5%;
-    padding-top: 0%;
+    padding-top: 5px;
 }
 .column_right {
 	float: right;

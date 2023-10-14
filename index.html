@@ -58,7 +58,16 @@
             not a good variable to correlate with life expectancy.
           </p>
         </div>
+        
+      </div>
+      <div class="container">
         <div id="bar_chart"></div>
+      </div>
+      <div class="container">
+        <div id="line_chart"></div>
+      </div>
+      <div class="container">
+        <div id="range_dot_plot"></div>
       </div>
     </div>
 
@@ -101,8 +110,8 @@
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         })
         .catch(console.error);
-      var spec8 = "js/line_chart.vg.json";
-      vegaEmbed("#line_chart", spec8)
+      var spec8 = "js/range_dot_plot.vg.json";
+      vegaEmbed("#range_dot_plot", spec8)
         .then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         })
