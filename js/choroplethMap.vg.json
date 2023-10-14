@@ -49,7 +49,7 @@
           "scale": {
             "type": "threshold",
             "domain": ["High income","Upper middle income", "Lower middle income", "Low income" ],
-            "range": ["#225ea8","#41b6c4","#a1dab4","#ffffcc"]
+            "range": ["#253494","#2c7fb8","#41b6c4","#a1dab4"]
           }
         },
         "tooltip": [

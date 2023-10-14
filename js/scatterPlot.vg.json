@@ -20,51 +20,36 @@
         "y": {
           "field": "Life Expectancy World Bank",
           "type": "quantitative",
-          "title": "Life Expectancy"
+          "title": "Life Expectancy",
+          "scale": {"domain": [20,100]}
         }
       },
   "layer": [
     {
       "selection": {
-        "region_highlight": {
+        "income_highlight": {
           "type": "multi",
-          "fields": ["Region"],
+          "fields": ["IncomeGroup"],
           "bind": "legend"
         }
       },
       "mark": "circle",
       "encoding": {
         "color": {
-          "field": "Region",
+          "field": "IncomeGroup",
           "type": "nominal",
           "scale": {
-            "domain": [
-              "South Asia",
-              "East Asia & Pacific",
-              "Europe & Central Asia",
-              "Sub-Saharan Africa",
-              "Middle East & North Africa",
-              "Latin America & Caribbean",
-              "North America"
-            ],
-            "range": [
-              "#1b9e77",
-              "#d95f02",
-              "#7570b3",
-              "#e7298a",
-              "#66a61e",
-              "#e6ab02",
-              "#a6761d"
-            ]
+            "domain": ["High income","Upper middle income", "Lower middle income", "Low income" ],
+            "range": ["#253494","#2c7fb8","#41b6c4","#a1dab4"]
           }
         },
         "opacity": {
-          "condition": { "selection": "region_highlight", "value": 1 },
+          "condition": { "selection": "income_highlight", "value": 1 },
           "value": 0.1
         },
         "tooltip": [
           { "field": "Country Name", "type": "nominal" },
-          { "field": "Region", "type": "nominal" },
+          { "field": "IncomeGroup", "type": "nominal" },
           { "field": "Year", "type": "quantitative" },
           {
             "field": "Health Expenditure %",
