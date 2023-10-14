@@ -13,13 +13,14 @@
     ],
     "encoding": {
       "x": {
+        "aggregate":"average",
         "field": "Life Expectancy World Bank",
         "type": "quantitative",
         "title": "Life Expectancy (years)",
         "scale": {"domain": [20,100]}
       },
       "y": {
-        "field": "Country Name",
+        "field": "IncomeGroup",
         "type": "nominal",
         "title": "Country",
         "axis": {
@@ -27,7 +28,8 @@
           "ticks": false,
           "minExtent": 70,
           "domain": false
-        }
+        },
+        "sort":["High income","Upper middle income", "Lower middle income", "Low income" ]
       }
     },
     "layer": [
@@ -35,7 +37,7 @@
         "mark": "line",
         "encoding": {
           "detail": {
-            "field": "Country Name",
+            "field": "IncomeGroup",
             "type": "nominal"
           },
           "color": {"value": "#db646f"}
