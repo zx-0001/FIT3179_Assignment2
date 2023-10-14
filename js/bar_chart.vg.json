@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": { "text": "Average unemployment % by regions (2019)" },
+  "title": { "text": "Average unemployment % by income group (2019)" },
   "data": {
     "url": "https://raw.githubusercontent.com/zx-0001/FIT3179_Assignment2/main/data/life%20expectancy.csv"
   },
@@ -11,6 +11,6 @@
   "mark": "bar",
   "encoding": {
     "x": { "aggregate":"mean", "field": "Unemployment", "type": "quantitative" },
-    "y": { "field": "Region", "type": "nominal", "sort":"-x" }
+    "y": { "field": "IncomeGroup", "type": "nominal", "sort":["High income","Upper middle income", "Lower middle income", "Low income" ] }
   }
 }
