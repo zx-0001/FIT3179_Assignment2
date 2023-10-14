@@ -6,13 +6,47 @@
 	margin-bottom: 30px;
 }
 
+#donut_chart {
+	float: left;
+	padding-left: 7%;
+	padding-right: 10px;
+	padding-bottom: 5%;
+	width: 40%;
+}
+
+#group_bar_chart {
+	align-self: center;
+	padding-bottom: 20px;
+}
+
 #scatter_plot {
 	vertical-align: top;
 	width: 100%;
 	margin-top: 20px;
 }
 
+#bar_chart {
+	float: left;
+	padding-left: 7%;
+	padding-right: 10px;
+	padding-bottom: 5%;
+	width: 40%;
+}
 
+#line_chart {
+	float: right;
+	padding-right: 7%;
+	padding-bottom: 5%;
+	width: 45%;
+}
+
+#range_dot_plot {
+	float: left;
+	padding-left: 7%;
+	padding-right: 10px;
+	padding-bottom: 5%;
+	width: 40%;
+}
 
 .center-screen {
 	display: flex;
