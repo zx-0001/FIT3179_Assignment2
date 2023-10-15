@@ -64,7 +64,7 @@
           "type": "ordinal",
           "scale": {
             "domain": [2001, 2019],
-            "range": ["#e6959c", "#911a24"]
+            "range": ["#0496ff", "#0b3954"]
           },
           "title": "Year"
         },
