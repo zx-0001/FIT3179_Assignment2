@@ -54,12 +54,12 @@
           {
             "field": "Health Expenditure %",
             "type": "quantitative",
-            "format": ","
+            "format": ".2f"
           },
           {
             "field": "Life Expectancy World Bank",
             "type": "quantitative",
-            "format": ","
+            "format": ".2f"
           }
         ]
       }
